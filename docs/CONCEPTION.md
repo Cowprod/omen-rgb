@@ -18,7 +18,7 @@ Piloter les trois zones RGB du HP OMEN 40L PC005 depuis une interface Web locale
 2. Toutes les commandes HID passent par un unique gestionnaire d'éclairage ; les écritures sont sérialisées.
 3. Après démarrage du service, l'état persistant est réappliqué. Un reboot physique peut présenter un bref éclairage blanc avant lancement du service.
 4. Les erreurs HID sont exposées, sans présenter un état souhaité comme un état matériel garanti.
-5. L'API de commande doit être protégée : écoute locale par défaut ; accès LAN uniquement après décision explicite sur l'authentification ou les restrictions réseau.
+5. Le serveur HTTP/WebSocket écoute sur 0.0.0.0 pour être accessible sur le LAN et via ZeroTier. L'accès est limité aux réseaux de confiance par configuration pare-feu ; une authentification applicative éventuelle reste à arbitrer.
 
 ## Parcours principal
 Connexion -> snapshot WS -> changement UI -> validation serveur -> persistance JSON -> application HID si autorisée -> diffusion à tous les clients. En OFF, la modification est conservée et diffusée mais aucune couleur non noire n'est appliquée.
