@@ -9,3 +9,5 @@
 - D-007 — UX — VALIDÉE : Bootstrap 5, Bootswatch Quartz, Font Awesome, jQuery et conventions Cowprod FRONTEND.md.
 - D-008 — TECHNIQUE — À QUALIFIER : OFF matériel via couleur noire 000000 ; vérifier physiquement le comportement et l'absence d'effet inter-zone.
 - D-009 — PRODUIT/TECHNIQUE — VALIDÉE : écoute sur 0.0.0.0 pour accès LAN et ZeroTier. Sécurisation réseau et éventuelle authentification applicative à préciser.
+
+- D-010 — TECHNIQUE — VALIDÉE : HTTP et WebSocket sur 0.0.0.0:3080 par défaut, HOST et PORT configurables (3000 réservé à un autre service potentiel).
