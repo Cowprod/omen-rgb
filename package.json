@@ -1,6 +1,6 @@
 {
   "name": "omen-rgb",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "HP Omen TracerLED RGB controller for Linux",
   "license": "MIT",
   "type": "commonjs",
@@ -8,9 +8,13 @@
     "omen-rgb": "bin/omen-rgb.js"
   },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "start": "node src/server.js"
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
   }
 }
