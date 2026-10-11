@@ -8,4 +8,4 @@
 - D-006 — PRODUIT — VALIDÉE : plusieurs interfaces synchronisées en temps réel par WebSockets ; reconnexion avec état complet.
 - D-007 — UX — VALIDÉE : Bootstrap 5, Bootswatch Quartz, Font Awesome, jQuery et conventions Cowprod FRONTEND.md.
 - D-008 — TECHNIQUE — À QUALIFIER : OFF matériel via couleur noire 000000 ; vérifier physiquement le comportement et l'absence d'effet inter-zone.
-- D-009 — SÉCURITÉ — À ARBITRER : exposition LAN et contrôle d'accès ; localhost par défaut tant que non décidé.
+- D-009 — PRODUIT/TECHNIQUE — VALIDÉE : écoute sur 0.0.0.0 pour accès LAN et ZeroTier. Sécurisation réseau et éventuelle authentification applicative à préciser.
